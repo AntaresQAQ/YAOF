@@ -325,6 +325,13 @@ ntp.aliyun.com
 cn.ntp.org.cn
 ntp.ntsc.ac.cn
 ' >>./package/new/luci-app-passwall/root/usr/share/passwall/rules/direct_host
+# Passwall2
+cp -rf ../passwall_luci/luci-app-passwall2 ./package/new/luci-app-passwall2
+wget -P package/new/luci-app-passwall2/ https://github.com/QiuSimons/OpenWrt-Add/raw/master/move_2_services.sh
+chmod -R 755 ./package/new/luci-app-passwall2/move_2_services.sh
+pushd package/new/luci-app-passwall2
+bash move_2_services.sh
+popd
 # qBittorrent 下载
 cp -rf ../lede_luci/applications/luci-app-qbittorrent ./package/new/luci-app-qbittorrent
 cp -rf ../lede_pkg/net/qBittorrent-static ./package/new/qBittorrent-static

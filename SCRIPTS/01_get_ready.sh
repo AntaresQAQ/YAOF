@@ -29,6 +29,7 @@ openwrt_add_repo="https://github.com/QiuSimons/OpenWrt-Add.git"
 openwrt_node_repo="https://github.com/nxhack/openwrt-node-packages.git"
 passwall_pkg_repo="https://github.com/xiaorouji/openwrt-passwall-packages"
 passwall_luci_repo="https://github.com/xiaorouji/openwrt-passwall"
+passwall2_luci_repo="https://github.com/xiaorouji/openwrt-passwall2"
 openwrt_third_repo="https://github.com/jjm2473/openwrt-third"
 dockerman_repo="https://github.com/lisaac/luci-app-dockerman"
 diskman_repo="https://github.com/lisaac/luci-app-diskman"
@@ -70,6 +71,7 @@ clone_repo $openwrt_add_repo master OpenWrt-Add &
 clone_repo $openwrt_node_repo master openwrt-node &
 clone_repo $passwall_pkg_repo main passwall_pkg &
 clone_repo $passwall_luci_repo main passwall_luci &
+clone_repo $passwall2_luci_repo main passwall2_luci &
 clone_repo $openwrt_third_repo main openwrt-third &
 clone_repo $dockerman_repo master dockerman &
 clone_repo $diskman_repo master diskman &
